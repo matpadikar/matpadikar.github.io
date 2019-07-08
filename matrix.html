@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <title>Mangesh Atpadikar</title>
+    <link rel="shortcut icon" type="image/png" href="Images/favicon.png" />
+</head>
+
+<body>
+
+    <canvas id="matrix"></canvas>
+
+    <script>
+        var c = document.getElementById("matrix");
+        var ctx = c.getContext("2d");
+
+        c.height = window.innerHeight;
+        c.width = window.innerWidth;
+
+        var shlok = "उद्यमेन हि सिध्यन्ति कार्याणि न मनोरथैः";
+        shlok = shlok.split("");
+
+        var font_size = 10;
+        var columns = c.width / font_size;
+        var drops = [];
+        for (var x = 0; x < columns; x++)
+            drops[x] = 1;
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillRect(0, 0, c.width, c.height);
+
+            ctx.fillStyle = "#0F0";
+            ctx.font = font_size + "px arial";
+            for (var i = 0; i < drops.length; i++) {
+                var text = shlok[Math.floor(Math.random() * shlok.length)];
+                ctx.fillText(text, i * font_size, drops[i] * font_size);
+                if (drops[i] * font_size > c.height && Math.random() > 0.975)
+                    drops[i] = 0;
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 33);
+
+    </script>
+</body>
+
+</html>
