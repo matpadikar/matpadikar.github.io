@@ -1,20 +1,30 @@
 .header{
-    height:9%; 
-    width: 100%; 
-    padding-top: 2%; 
-    float:right; 
-    box-shadow: 0px 5px #605e5c;
+    height:12%; 
+    width: 100%;
     background:#8c1515;  
+}
+
+.headerBorder{
+    height:1%; 
+    width: 100%;
+    background:#605e5c;  
 }
 
 .headerTab {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 160%;
     font-weight: 700;
-    margin-right: 3%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
     float:right;
     color: #ffffff;
-    text-decoration:none
+    text-decoration:none;
+    height: 66%;
+    padding-top: 2%;
+}
+
+.headerTab:hover{
+    background:#7a1c1c; 
 }
 
 body {
@@ -24,8 +34,14 @@ body {
 }
 
 .mainContent{
-    height: 100%;
-    background: #ffffff 
+    height: 85%;
+    background: #ffffff; 
+}
+
+.PTCExperience{
+    height: 78.5%;
+    background: #ededed;
+    margin: 2% 1% 0% 1%;
 }
 
 .profilePicture{
@@ -58,7 +74,7 @@ body {
 
 .jobTitle{
     font-size: 1.7em;
-    margin-left: 5%;
+    margin-left: 7%;
     margin-top:2%;
     float:left;
     width:100%;
@@ -66,7 +82,7 @@ body {
 }
 
 .Node {
-    width:13%;
+    width:10%;
     margin-left: 5.5%; 
 }
 .Java{    
@@ -74,24 +90,24 @@ body {
     margin-left: 6%;
 }
 .React{
-    width:9%;
+    width:7%;
     margin-left: 6%;
 }
 .Azure{
-    width:15%;
-    margin-left: 6%
+    width:13%;
+    margin-left: 5%
 }
 .PostgresSQL{
-    width:7%;
-    margin-left:5%
+    width:6%;
+    margin-left:8%
 }
 .GCP{
-    width:18%;
-    margin-left: 0.5%; 
+    width:13%;
+    margin-left: 3%; 
 }
 .Cpp{
-    width:7%;
-    margin-left: 6%
+    width:5%;
+    margin-left: 7.5%
 }
 
 .blackHole{
