@@ -58,7 +58,7 @@ body {
     max-width: 80%; 
     max-height: 80%;
     float:left; 
-    width: 100%;
+    width: 80%;
     border-color: #ffffff;
     margin-top: 10%
 }
@@ -136,8 +136,31 @@ body {
 
 .LI-profile-badge{
     margin-top: 100%;
+    margin-left: 2%;
 }
 
+.sketch{
+    opacity: 0.9;
+    width:80%;
+    margin-left:10%;
+    border-radius: 1%;
+    box-shadow: 5px 5px 5px 5px #6b6966;
+}
+
+.sketch:hover{
+    box-shadow: 5px 5px 5px 5px #605e5c;
+    opacity: 1;
+}
+
+.horizontal-separator{
+    width:90%; 
+    float:left; 
+    margin-top:5%; 
+    margin-bottom:5%; 
+    margin-left:5%; 
+    height:0.5%;
+    background:#605e5c;
+}
 /* 
 Standford red #8c1515;
 Haldi yellow #ffc20d; 
